@@ -1,14 +1,14 @@
 import React from "react";
-import SnakeHead from "../../snakeModel/snakeHead/SnakeHead";
-import * as PRISMA from "../../snakeModel/snakeBody/SnakeBodyPrisma";
+import * as PRISMA from "../../assets/snakeModel/snakeBody/SnakeBodyPrisma";
 import * as SNAKE from "../../engine/snake/snake";
-import SnakeTail from "../../snakeModel/snakeTail/snakeTail";
 import setSnakePosition from "./setSnakePosition";
 import setSnakeHeadProps from "./snakeHead/setSnakeHeadProps";
 import setSnakeTailProps from "./snakeTail/setSnakeTailProps";
 import setSnakeBodyProps from "./snakeBody/setSnakeBodyProps";
 import { a, useSprings } from "@react-spring/three";
 import { SnakePositionAnimationProps } from "../../types/three";
+import SnakeTail from "../../assets/snakeModel/snakeTail/snakeTail";
+import SnakeHead from "../../assets/snakeModel/snakeHead/SnakeHead";
 
 interface SnakeProps {
   onHeadPositionUpdate: (position: [number, number, number]) => void;
